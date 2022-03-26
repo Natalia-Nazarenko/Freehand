@@ -1,0 +1,135 @@
+@import "vars";
+@import "sprite";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  margin: 0 auto;
+  max-width: 1160px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  &_header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.header {
+  padding: 50px 0;
+  position: relative;
+  &__img img {
+    width: 30px;
+    height: auto;
+  }
+  &__title {
+    color: $font-color-main;
+    font-family: "Quicksand";
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+}
+.nav {
+  &__input,
+  &__burger {
+    display: none;
+  }
+}
+.section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+  &__item {
+    border: 1px solid #e5eaf4;
+    border-radius: 8px;
+    width: 30%;
+    padding: 40px;
+    &:hover {
+      border-color: #3db370;
+      & .icon-svg {
+        fill: #52c29d;
+      }
+    }
+  }
+  &__text,
+  &__title-3,
+  &__link {
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: $font-color-main;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+  }
+  &__title-3 {
+    font-size: 24px;
+    line-height: 21px;
+    margin-bottom: 15px;
+  }
+  &__link {
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+  }
+}
+.icon-svg {
+  margin-bottom: 30px;
+  width: 35px;
+  height: 35px;
+}
+.main {
+  &__title-1 {
+    font-family: "Nunito Sans";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: #16133d;
+    margin-bottom: 35px;
+  }
+  &__title-4 {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #7690a8;
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 55px;
+  }
+}
+.menu {
+    display: none;
+    // opacity: 0;
+  }
+.footer {
+  background: $font-color-main;
+  padding: 45px 0;
+  &__logo {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    & img {
+      width: 30px;
+      height: auto;
+    }
+  }
+}
+.footer__title {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
+  color: #f2f2f2;
+  margin-left: 15px;
+}
+@import "media-queries";
+

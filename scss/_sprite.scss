@@ -1,0 +1,15 @@
+.sp-list {
+  display: flex;
+  list-style-type: none;
+  &__link svg {
+    width: 40px;
+    height: 40px;
+    background: #efeef3;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    &:hover {
+      fill: #3db370;
+    }
+  }
+}
